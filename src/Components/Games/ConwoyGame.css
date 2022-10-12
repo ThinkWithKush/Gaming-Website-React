@@ -1,4 +1,4 @@
-.cell{
+.conwoy-cell{
   margin: 0;
   padding: 0;
   gap:0;
@@ -16,27 +16,27 @@
 .card-header{
   background-color: rgb(14, 12, 12);
 }
-
+`   
 .bg-black{
   background-color: black;
 }
 
-.gameBoard{
+.conwoy-gameBoard{
   border: 1px solid white;
 }
 
-.alive:hover{
+.conwoy-alive:hover{
   background-color: rgb(33, 213, 219);
 }
 
-.dead:hover{
+.conwoy-dead:hover{
   background-color: rgb(255, 63, 5);
 }
 
-.alive{
+.conwoy-alive{
   background-color: white
 }
 
-.dead{
+.conwoy-dead{
   background-color: black;
 }

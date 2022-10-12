@@ -1,0 +1,40 @@
+.tictactoe-board{
+  height: 450px;
+  width: 450px;
+  border-radius: 10px;
+  /* background-image: url("../../assets/img/TicTacToeBoard.gif"); */
+}
+
+.tictactoe-cell{
+  height: 150px;
+  width: 150px;
+  margin: 2px;
+  color: whitesmoke;
+  align-items: center;
+  border-radius: 10px;
+  background-color: black;
+  font-size: 100px;
+}
+
+.tictactoe-res{
+  font-size: 150px;
+  font-weight: 900;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Birthday',serif;
+}
+
+.p1{
+  background-color: greenyellow;
+  background-size: cover;
+  background-image: url('../../assets/img/circle.png');
+  color: black;
+}
+
+.p2{
+  background-color: aqua;
+  background-size: cover;
+  background-image: url('../../assets/img/cross.png');
+  color: white;
+}

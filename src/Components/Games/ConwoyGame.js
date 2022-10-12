@@ -4,7 +4,7 @@ import './ConwoyGame.css';
 
 const Cell = ({row,col,state,board,setBoard})=>{
   return (
-    <div className={"cell "+(state?"alive":"dead")} onClick={()=>{
+    <div className={"conwoy-cell "+(state?"conwoy-alive":"conwoy-dead")} onClick={()=>{
       let newBoard= JSON.parse(JSON.stringify(board));
       newBoard[row][col]=!board[row][col];
       setBoard(newBoard);
@@ -13,8 +13,7 @@ const Cell = ({row,col,state,board,setBoard})=>{
   )
 }
 
-const ConwoyGame = () => {
-
+const ConwoyGame = (props) => {
 
   //Variables and States
   const rows=40;
@@ -134,13 +133,14 @@ const ConwoyGame = () => {
 
   const evaluateCustomBoard = (customState) => {
     setBoardState(customState);
+    setCustomState("");
   }
 
   return (
     <>
     <div className="card justify-content-center">
       <div className="card-header bg-dark text-white"><h3>
-        <i><Link className="header-link" to="../../home">&larr;</Link></i>&nbsp;&nbsp;
+        { (props.backPath)? <i><Link className="header-link" to={props.backPath}>&larr;</Link>&nbsp;&nbsp;</i>:null}
         <strong>Conwoy's Game of Life</strong>
       </h3></div>
       <div className="card-body bg-black justify-content-center">
@@ -156,11 +156,11 @@ const ConwoyGame = () => {
             </div>
             <div className="btn-group col-sm-2">
               <div className="btn btn-primary" onClick={seed}><strong>Seed</strong></div>
-              <div className="btn btn-danger" onClick={clearBoard}><strong>Clear</strong></div>
+              <div className="btn btn-danger" onClick={clearBoard}><strong>Reset</strong></div>
             </div>
             <div className="btn-group col-sm-4">
               <div className="btn btn-primary" onClick={getState}><strong>Check</strong></div>
-              <input className="" type="text" value={customState} placeholder="Enter Code" onChange={event=>setCustomState(event.target.value)}></input>
+              <input className="" type="text" value={customState} placeholder="  Enter Code" onChange={event=>setCustomState(event.target.value)}></input>
               <div className="btn btn-dark" onClick={()=>setBoardState(evaluateCustomBoard(customState))}><strong>Set </strong></div>
             </div>
             <div className="text-white col-sm-2">
@@ -170,7 +170,7 @@ const ConwoyGame = () => {
         </div>
         <div className="row mt-3">
           <div className="col-9">
-            <table className="col-auto gameBoard"><tbody>
+            <table className="col-auto conwoy-gameBoard"><tbody>
               {
                 board.map((boardRow,row)=>{
                   return <tr key={row}>{boardRow.map((state,col)=>{
