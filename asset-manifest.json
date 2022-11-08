@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Gaming-Website-React/static/css/main.2fc1da68.css",
+    "main.js": "/Gaming-Website-React/static/js/main.34ec807b.js",
+    "static/media/SnakeGame.gif": "/Gaming-Website-React/static/media/SnakeGame.eb0332299fcb64bc7845.gif",
+    "static/media/Game_of_Life.gif": "/Gaming-Website-React/static/media/Game_of_Life.606ebdd28b8bf7524ba5.gif",
+    "static/media/bg-home2.jpg": "/Gaming-Website-React/static/media/bg-home2.9e7de27de275a50541e7.jpg",
+    "static/media/circle.png": "/Gaming-Website-React/static/media/circle.f36e8d57cb5700554052.png",
+    "static/media/Cumiskat.ttf": "/Gaming-Website-React/static/media/Cumiskat.778397dd4844189df3e7.ttf",
+    "static/media/TicTacToe.gif": "/Gaming-Website-React/static/media/TicTacToe.6939173c077433bd6339.gif",
+    "static/media/cross.png": "/Gaming-Website-React/static/media/cross.cdf2cf390e5df3efa307.png",
+    "static/media/Birthday.ttf": "/Gaming-Website-React/static/media/Birthday.72d23ea7dd52cde6b6eb.ttf",
+    "static/media/logo.png": "/Gaming-Website-React/static/media/logo.c7dfe3d487ee4be36d85.png",
+    "index.html": "/Gaming-Website-React/index.html",
+    "main.2fc1da68.css.map": "/Gaming-Website-React/static/css/main.2fc1da68.css.map",
+    "main.34ec807b.js.map": "/Gaming-Website-React/static/js/main.34ec807b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2fc1da68.css",
+    "static/js/main.34ec807b.js"
+  ]
+}
